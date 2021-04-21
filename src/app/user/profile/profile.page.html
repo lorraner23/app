@@ -34,7 +34,7 @@
         <ion-item class="ion-no-padding"><strong>Telefone:&nbsp;</strong>{{ (item | async)?.telephone }}</ion-item>
         <ion-item class="ion-no-padding"><strong>Whatsapp:&nbsp;</strong>{{ (item | async)?.whatsapp }}</ion-item>
         <ion-item class="ion-no-padding"><strong>Nascimento:&nbsp;</strong>{{ (item | async)?.birth }}</ion-item>
-        <ion-item class="ion-no-padding"><strong>CPF:&nbsp;</strong>{{ (item | async)?.cpf }}</ion-item>
+        <!-- <ion-item class="ion-no-padding"><strong>CPF:&nbsp;</strong>{{ (item | async)?.cpf }}</ion-item> -->
         <ion-item class="ion-no-padding"><strong>Sexo:&nbsp;</strong>{{ (item | async)?.gender }}</ion-item>
         <ion-item class="ion-no-padding">
 
@@ -44,10 +44,10 @@
           </ion-grid>
 
         </ion-item>
-        <ion-item class="ion-no-padding"><strong>PCD:&nbsp;</strong>
+        <!-- <ion-item class="ion-no-padding"><strong>PCD:&nbsp;</strong>
           <span *ngIf="(item | async)?.pwd">Sim</span>
           <span *ngIf="!(item | async)?.pwd">Não</span>
-        </ion-item>
+        </ion-item> -->
       </ion-list>
       <ion-button expand="block" routerLink="/edit/{{ (item | async)?.uid }}">Editar</ion-button>
     </ion-card-content>

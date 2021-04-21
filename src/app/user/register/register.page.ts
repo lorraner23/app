@@ -126,14 +126,6 @@ export class RegisterPage implements OnInit {
         ])
       ],
 
-      // Campo CPF (cpf)
-      cpf: [
-        '',
-        Validators.compose([
-          Validators.required,
-          Validators.pattern(/^([0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2})$/)
-        ])
-      ],
 
       // Campo sexo (gender)
       gender: [
@@ -151,8 +143,8 @@ export class RegisterPage implements OnInit {
         ])
       ],
 
-      // Campo PCD (pwd)
-      pwd: [false],
+
+
 
       // Id do usuário logado (uid)
       uid: ['']
@@ -191,7 +183,7 @@ export class RegisterPage implements OnInit {
   async presentAlert() {
     const alert = await this.alert.create({
       header: 'Oba!',
-      message: 'Cadastro realizado com sucesso!',
+      message: 'Pré-Matrícula realizado com sucesso!',
       buttons: [{
         text: 'Ok',
         handler: () => {

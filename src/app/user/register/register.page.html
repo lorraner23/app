@@ -7,7 +7,7 @@
     </ion-buttons>
 
     <!-- Título da página -->
-    <ion-title>Cadastre-se</ion-title>
+    <ion-title>Pré-Matrícula</ion-title>
 
     <!-- Logotipo -->
     <ion-img src="assets/logo01.png" slot="end" class="pages-logo"></ion-img>
@@ -17,8 +17,8 @@
 
 <ion-content class="ion-no-padding ion-padding-horizontal">
 
-  <h2>Cadastre-se</h2>
-  <p>Preencha todos os campos com atenção para se cadastrar no aplicativo. Você será responsável caso preencha
+  <h2>Faça sua Pré-Matrícula</h2>
+  <p>Preencha todos os campos com atenção para se matricular. Você será responsável caso preencha
     informações incorretas ou inverídicas.</p>
   <p class="ion-text-center">
     <ion-text color="danger"><small>Todos os campos são obrigatórios.</small></ion-text>
@@ -88,17 +88,6 @@
         <ion-input type="text" id="birth" name="birth" formControlName="birth"></ion-input>
       </ion-item>
 
-      <!-- Campo CPF (cpf) -->
-      <ion-item>
-        <ion-label for="cpf" position="floating" color="primary">
-          CPF:
-          <ion-text color="danger" *ngIf="registerForm.controls.cpf.errors">
-            <small *ngIf="registerForm.controls.cpf.errors.required">* Obrigatório</small>
-            <small *ngIf="registerForm.controls.cpf.errors.pattern">* Inválido</small>
-          </ion-text>
-        </ion-label>
-        <ion-input type="text" id="cpf" name="cpf" formControlName="cpf"></ion-input>
-      </ion-item>
 
       <!-- Campo sexo (gender) -->
       <ion-item>
@@ -131,17 +120,12 @@
         <ion-textarea type="text" id="address" name="address" formControlName="address" autoGrow="true"></ion-textarea>
       </ion-item>
 
-      <!-- Campo PCD (pwd) -->
-      <ion-item>
-        <ion-label for="pwd" color="primary">
-          PCD:
-        </ion-label>
-        <ion-toggle id="pwd" name="pwd" formControlName="pwd" checked></ion-toggle>
-      </ion-item>
+
+
 
     </ion-list>
 
-    <ion-button class="ion-margin-vertical" type="submit" expand="block" [disabled]="registerForm.invalid">Cadastrar
+    <ion-button class="ion-margin-vertical" type="submit" expand="block" [disabled]="registerForm.invalid">Enviar
     </ion-button>
 
   </form>

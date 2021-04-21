@@ -87,17 +87,7 @@
         <ion-input type="text" id="birth" name="birth" formControlName="birth"></ion-input>
       </ion-item>
 
-      <!-- Campo CPF (cpf) -->
-      <ion-item>
-        <ion-label for="cpf" position="floating" color="primary">
-          CPF:
-          <ion-text color="danger" *ngIf="registerForm.controls.cpf.errors">
-            <small *ngIf="registerForm.controls.cpf.errors.required">* Obrigatório</small>
-            <small *ngIf="registerForm.controls.cpf.errors.pattern">* Inválido</small>
-          </ion-text>
-        </ion-label>
-        <ion-input type="text" id="cpf" name="cpf" formControlName="cpf"></ion-input>
-      </ion-item>
+
 
       <!-- Campo sexo (gender) -->
       <ion-item>
@@ -130,13 +120,7 @@
         <ion-textarea type="text" id="address" name="address" formControlName="address" autoGrow="true"></ion-textarea>
       </ion-item>
 
-      <!-- Campo PCD (pwd) -->
-      <ion-item>
-        <ion-label for="pwd" color="primary">
-          PCD:
-        </ion-label>
-        <ion-toggle id="pwd" name="pwd" formControlName="pwd" checked></ion-toggle>
-      </ion-item>
+
 
     </ion-list>
 

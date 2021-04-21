@@ -87,10 +87,8 @@ export class EditPage implements OnInit {
             this.registerForm.controls.telephone.setValue(this.userData.telephone);
             this.registerForm.controls.whatsapp.setValue(this.userData.whatsapp);
             this.registerForm.controls.birth.setValue(this.userData.birth);
-            this.registerForm.controls.cpf.setValue(this.userData.cpf);
             this.registerForm.controls.address.setValue(this.userData.address);
             this.registerForm.controls.gender.setValue(this.userData.gender);
-            this.registerForm.controls.pwd.setValue(this.userData.pwd);
             this.registerForm.controls.uid.setValue(this.userData.uid);
           }
         });
@@ -158,14 +156,7 @@ export class EditPage implements OnInit {
         ])
       ],
 
-      // Campo CPF (cpf)
-      cpf: [
-        '',
-        Validators.compose([
-          Validators.required,
-          Validators.pattern(/^([0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2})$/)
-        ])
-      ],
+    
 
       // Campo sexo (gender)
       gender: [
@@ -182,9 +173,6 @@ export class EditPage implements OnInit {
           Validators.required
         ])
       ],
-
-      // Campo PCD (pwd)
-      pwd: [false],
 
       // Id do usuário logado (uid)
       uid: ['']
